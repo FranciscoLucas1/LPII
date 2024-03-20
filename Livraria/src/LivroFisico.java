@@ -19,12 +19,11 @@ public class LivroFisico extends Livro {
     }
 
     public void exibirLivro(){
-     
         System.out.println("Titulo: "+getTitulo());
-        System.out.println("Ano: "+getAno());
+        System.out.println(("Ano: "+getAno()));
         System.out.println("ISBN: "+getIsbn());
         System.out.println("Preço: "+getPreco());
         System.out.println("Autor: "+getAutor());
-        System.out.println("Quantidade de Páginas: "+getQtdPaginas());
+        System.out.println(("Quantidade de Páginas: "+getQtdPaginas()));
     }
 }
