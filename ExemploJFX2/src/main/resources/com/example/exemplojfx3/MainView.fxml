@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.exemplojfx3.MainController">
+   <children>
+      <ImageView fx:id="imagem" fitHeight="150.0" fitWidth="200.0" layoutX="135.0" layoutY="158.0" onMouseClicked="#onImagemClicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/CANGURU.jpg" />
+         </image>
+      </ImageView>
+      <ComboBox fx:id="comboBox" layoutX="294.0" layoutY="79.0" onAction="#onCbClicked" prefWidth="150.0" />
+      <DatePicker fx:id="data" editable="false" layoutX="361.0" layoutY="188.0" onAction="#onDataClicked" />
+      <MenuBar layoutX="-6.0" layoutY="1.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem fx:id="sobre" mnemonicParsing="false" onAction="#onSobreClicked" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>
